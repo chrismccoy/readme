@@ -1,0 +1,23 @@
+{
+  "name": "readme",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"npm run watch:css\" \"nodemon server.js\"",
+    "build": "tailwindcss -i ./public/css/readme.scss -o ./public/css/readme.css --minify"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "isomorphic-dompurify": "^2.35.0",
+    "marked": "^17.0.1",
+    "node-cache": "^5.1.2",
+    "octokit": "^5.0.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.11",
+    "tailwindcss": "^3.4.19"
+  }
+}
